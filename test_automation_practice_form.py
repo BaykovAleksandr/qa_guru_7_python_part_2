@@ -1,5 +1,5 @@
 import time
-from selene import browser, command
+from selene import browser
 from selene import be, have
 
 
