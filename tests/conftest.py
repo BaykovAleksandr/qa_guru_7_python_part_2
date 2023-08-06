@@ -7,7 +7,7 @@ from selenium import webdriver
 def config_browser():
     driver = webdriver.Chrome()
     browser.config.driver = driver
-    browser.open('https://demoqa.com')
+    browser.config.base_url = 'https://demoqa.com'
     driver.set_window_size(1920, 1080)
     yield
     browser.quit()
